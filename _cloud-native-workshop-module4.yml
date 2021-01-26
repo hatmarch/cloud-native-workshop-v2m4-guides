@@ -2,7 +2,7 @@ id: "cloudnative"
 name: "The Containers and Cloud-Native Roadshow Dev Track - Module 4"
 
 content:
-  url: https://raw.githubusercontent.com/RedHat-Middleware-Workshops/cloud-native-workshop-v2m4-guides.git/master
+  url: https://raw.githubusercontent.com/hatmarch/cloud-native-workshop-v2m4-guides.git/ocp-4.5-sa
 
 vars:
   ROUTE_SUBDOMAIN:
@@ -21,6 +21,5 @@ modules:
   activate:
   - workshop-environment
   - cloud-native-architectures
-  - high-performing-cache-services
   - event-driven-services
   - evolve-serverless-services
