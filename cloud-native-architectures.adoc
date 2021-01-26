@@ -91,7 +91,7 @@ Step through the prompts, using the following value for **Repository URL**. If y
 
 [source,none,role="copypaste"]
 ----
-https://github.com/RedHat-Middleware-Workshops/cloud-native-workshop-v2m4-labs.git
+https://github.com/hatmarch/cloud-native-workshop-v2m4-labs.git
 ----
 
 image::crw-clone-repo.png[crw,900]
@@ -120,7 +120,37 @@ The Terminal window in CodeReady Workspaces. You can open a terminal window for 
 image::codeready-workspace-terminal.png[codeready-workspace-terminal, 700]
 ====
 
-=== Remove other projects
+=== Login to Openshift
+
+We will be issuing commands to the OpenShift cluster from within the terminal in CodeReady Workspaces.
+
+Now although your CodeReady workspace is running on the Kubernetes cluster, it’s running with a default restricted _Service Account_ that prevents you from creating most resource types. If you’ve completed other modules, you’re probably already logged in, but let’s login again: click on *Login to OpenShift*, and enter your given credentials:
+
+* Username: `{{ USER_ID }}`
+* Password: `{{ OPENSHIFT_USER_PASSWORD }}`
+
+image::cmd-login.png[login,700]
+
+You should see something like this (the project names may be different):
+
+[source,none]
+----
+Login successful.
+
+You have access to the following projects and can switch between them with 'oc project <projectname>':
+
+  * {{ USER_ID }}-cloudnative-pipeline
+    {{ USER_ID }}-cloudnativeapps
+
+Using project "{{ USER_ID }}-cloudnative-pipeline".
+Welcome! See 'oc help' to get started.
+----
+
+[NOTE]
+====
+After you log in using *Login to OpenShift*, the terminal is no longer usable as a regular terminal. You can close the terminal window. You will still be logged in when you open more terminals later!
+====
+
 
 If you've completed other modules today (such as `cloud-native-workshop-v2m1-labs`), remove them from your workspace by right-clicking on the project name in the explorer and choose *Delete* and accept the warning. Be sure not to delete the new project you just imported for this lab!
 
