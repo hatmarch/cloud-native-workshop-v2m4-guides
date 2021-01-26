@@ -1,0 +1,41 @@
+{
+	"name": "Lab Docs",
+	"dockerFile": "Dockerfile",
+	"runArgs": [
+		// FIXME: Due to issues with docker for mac, need to mount the docker socket in this .raw way
+		// see: https://github.com/docker/for-mac/issues/4755
+		"-v", "/var/run/docker.sock.raw:/var/run/docker.sock",
+		// share docker registry credentials
+		// FIXME: This does not appear to work with all DockerDesktop for Mac configurations
+		//"-v", "${env:HOME}/.docker:/home/jboss/.docker",
+
+		"-v", "${env:HOME}/.aws:/home/jboss/.aws",
+		"-v", "${env:HOME}/.kube:/opt/approot/src/.kube",
+		// "-v", "${env:HOME}/.vs-kubernetes:/home/jboss/.vs-kubernetes",
+
+		// use local .oh-my-zsh configuration if it exists (overwriting one in container).
+		// comment the following line out if you want to use local installation on container instead
+		// "-v", "${env:HOME}/.oh-my-zsh:/opt/approot/src/.oh-my-zsh",
+		// "-v", "${env:HOME}/.helm:/home/jboss/.helm",
+		// "-v", "${env:HOME}/.ssh:/home/jboss/.ssh",
+
+		// Ensure that the m2 cache persists
+		"-v", "${localWorkspaceFolder}:/opt/approot/src",
+
+		// Used for AWS based clusters
+		"-e", "AWS_PROFILE=redhat",
+		"-e", "REGION=ap-southeast-2"
+		//"AWS_PROFILE=${env:AWS_PROFILE}"
+	],
+	"extensions": [
+		"joaompinto.asciidoctor-vscode",
+		"humao.rest-client",
+		"eamodio.gitlens"
+	],
+	"settings":{
+		"http.proxyStrictSSL": false,
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"workbench.tips.enabled": false,
+		"workbench.colorTheme": "Monokai",
+	}
+}
