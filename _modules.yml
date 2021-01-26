@@ -12,3 +12,5 @@ modules:
     name: Creating Event-Driven Services
   evolve-serverless-services:
     name: Evolving to Serverless Services
+  knative-tutorial:
+    name: Knative Tutorial
