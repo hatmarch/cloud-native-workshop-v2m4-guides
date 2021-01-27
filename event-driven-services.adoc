@@ -35,7 +35,30 @@ The basic architecture of operators in AMQ is seen below:
 
 image::kafka-operators-arch.png[amqstreams, 700]
 
-Let's create a **Kafka cluster**. Click *+Add* on the left, on the _From Catalog_ box on the project overview:
+Let's create a **Kafka cluster**. 
+
+First, open a new brower with the {{ CONSOLE_URL }}[OpenShift web console^]:
+
+image::openshift_login.png[openshift_login, 700]
+
+Login using:
+
+* Username: `{{ USER_ID }}`
+* Password: `{{ OPENSHIFT_USER_PASSWORD }}`
+
+You will see a list of projects to which you have access:
+
+image::openshift_landing.png[openshift_landing, 700]
+
+[NOTE]
+====
+The project displayed in the landing page depends on which labs you will run today. If you will develop
+`Service Mesh and Identity` then you will see pre-created projects as the above screeenshot.
+====
+
+Open the {{ CONSOLE_URL }}/topology/ns/{{ USER_ID }}-cloudnativeapps[Topology View^].
+
+Next click *+Add* on the left, on the _From Catalog_ box on the project overview:
 
 image::kafka-catalog.png[kafka, 700]
 
