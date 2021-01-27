@@ -276,7 +276,21 @@ mp.messaging.incoming.orders.enable.auto.commit=true
 mp.messaging.incoming.orders.request.timeout.ms=30000
 ----
 
-Build and deploy the project using using the OpenShift extension, which will use the maven plugin to deploy via CodeReady Workspaces Terminal:
+Now we're ready to build and deploy our payment-service.  The OpenShift extension will take care of the build of the container and deployment of that build _for our current project_.  So first we need to make sure we're targeting the project to which we want to deploy this service:
+
+[source,sh,role="copypaste"]
+----
+oc project {{ USER_ID }}-cloudnativeapps
+----
+
+[NOTE]
+====
+Once we changed to the `{{ USER_ID }}-cloudnativeapps` project with the `oc project` command we will remain on that project until we issue another `oc project` command or override this by specifying a namespace (e.g. with a `-n` parameter) on participating commands.  
+
+For the rest of the builds in this chapter, it assumes that `{{ USER_ID }}-cloudnativeapps` is the targeted project.
+====
+
+With the proper project targeted, now we can build and deploy the project using using the OpenShift extension, which will use the maven plugin to deploy via CodeReady Workspaces Terminal.  
 
 [source,sh,role="copypaste"]
 ----
