@@ -56,7 +56,7 @@ The project displayed in the landing page depends on which labs you will run tod
 `Service Mesh and Identity` then you will see pre-created projects as the above screeenshot.
 ====
 
-Open the {{ CONSOLE_URL }}/topology/ns/{{ USER_ID }}-cloudnativeapps[Topology View^].
+Open the {{ CONSOLE_URL }}/topology/ns/{{ USER_ID }}-cloudnativeapps[Topology View for the {{ USER_ID }}-cloudnativeapps project^].
 
 Next click *+Add* on the left, on the _From Catalog_ box on the project overview:
 
