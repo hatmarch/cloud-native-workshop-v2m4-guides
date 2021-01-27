@@ -150,8 +150,3 @@ Welcome! See 'oc help' to get started.
 ====
 After you log in using *Login to OpenShift*, the terminal is no longer usable as a regular terminal. You can close the terminal window. You will still be logged in when you open more terminals later!
 ====
-
-
-If you've completed other modules today (such as `cloud-native-workshop-v2m1-labs`), remove them from your workspace by right-clicking on the project name in the explorer and choose *Delete* and accept the warning. Be sure not to delete the new project you just imported for this lab!
-
-image::remove-workspace.png[remove, 700]
