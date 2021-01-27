@@ -1,6 +1,6 @@
 == Knative Tutorial
 :experimental:
 
-Next you will be running the knative tutorial from within CodeReady Workspaces.
+In this section, you'll get to play with some of the other features of knative such as Revision Management, Scaling, and Eventing from within CodeReady Workspaces.
 
 Instructions can be found link:https://hatmarch.github.io/knative-tutorial?USER={{ USER_ID }}[here]
