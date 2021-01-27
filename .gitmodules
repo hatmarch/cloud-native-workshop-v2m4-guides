@@ -1,0 +1,4 @@
+[submodule "knative-tutorial"]
+	path = knative-tutorial
+	url = https://github.com/hatmarch/knative-tutorial.git
+	branch = services-australia
