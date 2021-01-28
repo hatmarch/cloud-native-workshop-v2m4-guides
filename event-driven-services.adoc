@@ -1,5 +1,6 @@
 = Lab2 - Creating Event-Driven/Reactive Services
 :experimental:
+:imagesdir: images
 
 Traditional microservice architectures are typically composed of many individual services with different functions. Each application service has many clients that need to communicate with the service for fetching data. It will become more complex to handle data streams because everything can be a stream of data such as end-user clicks, RESTful APIs, IoT devices generating data. And complexity rises when these services are running on hybrid or multi-cloud infrastructure.
 
@@ -66,7 +67,7 @@ Type in `kafka` in the search box, and click on the *Kafka*:
 
 image::kafka-create.png[kafka, 700]
 
-Click on *Create* and you will enter YAML editor that defines a *Kafka* Cluster. Keep the all values as-is then click on *Create* on the botton:
+Click on *Create* and you will enter YAML editor that defines a *Kafka* Cluster. Keep the all values as-is then click on the *Create* button (on the bottom):
 
 image::kafka-create-detail.png[kafka, 700]
 
@@ -74,7 +75,7 @@ Next, we will create Kafka _Topic_. Click _Add > From Catalog_ again, type in `k
 
 image::kafka-topic-catalog.png[kafka, 700]
 
-Click on *Create* and you will enter YAML editor that defines a *KafkaTopic* object. Change the name to `orders` as shown then click on *Create* on the bottom:
+Click on *Create* and you will enter YAML editor that defines a *KafkaTopic* object. Change the name to `orders` as shown then click on the *Create* button on the bottom:
 
 image::kafka-topic-orders-create.png[kafka, 700]
 
@@ -82,7 +83,7 @@ Create another topic using the same process as above, but called `payments`:
 
 image::kafka-topic-catalog.png[kafka, 700]
 
-Change the name to `payments` then click on *Create* on the bottom.
+Change the name to `payments` then click on the *Create* button on the bottom.
 
 image::kafka-topic-payments-create.png[kafka, 700]
 
@@ -364,7 +365,7 @@ following result in `Pod Terminal`:
 ----
 
 
-This shows that the `order-service` can successfully process orders in the backend and send them to the payment processor.
+This shows that the `payment-service` can successfully process orders in the backend and send them to a (in this case) notional external payment processor and post the results to the `payments` topic
 
 Before moving to the next step, stop the Kafka consumer console via kbd:[CTRL+C]:
 
