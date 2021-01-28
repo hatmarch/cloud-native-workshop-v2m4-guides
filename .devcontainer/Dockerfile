@@ -10,6 +10,8 @@ RUN yum -y remove git* && yum -y install https://packages.endpoint.com/rhel/7/os
     yum -y install git
 # RUN curl -sSL "https://github.com/buildpacks/pack/releases/download/v0.15.1/pack-v0.15.1-linux.tgz" | tar -C /usr/local/bin/ --no-same-owner -xzv pack
 
+RUN npm install --global gulp
+
 USER default
 
 # # Default DEMO_HOME directory
