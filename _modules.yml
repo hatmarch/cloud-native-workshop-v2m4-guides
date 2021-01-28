@@ -13,4 +13,4 @@ modules:
   evolve-serverless-services:
     name: Evolving to Serverless Services
   knative-tutorial:
-    name: Knative Tutorial
+    name: "Knative: Deeper Dive"
