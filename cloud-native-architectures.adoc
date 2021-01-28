@@ -120,6 +120,14 @@ The Terminal window in CodeReady Workspaces. You can open a terminal window for 
 image::codeready-workspace-terminal.png[codeready-workspace-terminal, 700]
 ====
 
+=== Speed Up Builds by Seeding the Maven Cache
+
+During the course of this lab you will need to build some of the code that you change using maven (`mvn`).
+
+To cut down on the number of maven packages that need to be downloaded in order to build the different components, you might consider selecting the `Seed Cache` command in the tools draw prior to building any packages in your CodeReady Workspace instace.
+
+image::seed-cache.png[]
+
 === Login to Openshift
 
 We will be issuing commands to the OpenShift cluster from within the terminal in CodeReady Workspaces.
