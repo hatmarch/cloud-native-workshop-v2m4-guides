@@ -124,7 +124,7 @@ image::codeready-workspace-terminal.png[codeready-workspace-terminal, 700]
 
 During the course of this lab you will need to build some of the code that you change using maven (`mvn`).
 
-To cut down on the number of maven packages that need to be downloaded in order to build the different components, you might consider selecting the `Seed Cache` command in the tools draw prior to building any packages in your CodeReady Workspace instace.
+To cut down on the number of maven packages that need to be downloaded in order to build the different components, you might consider selecting the `Seed Cache` command in the tools draw prior to building any packages in your CodeReady Workspace instance.  See image for more details.
 
 image::seed-cache.png[]
 
@@ -132,7 +132,7 @@ image::seed-cache.png[]
 
 We will be issuing commands to the OpenShift cluster from within the terminal in CodeReady Workspaces.
 
-Now although your CodeReady workspace is running on the Kubernetes cluster, it’s running with a default restricted _Service Account_ that prevents you from creating most resource types. If you’ve completed other modules, you’re probably already logged in, but let’s login again: click on *Login to OpenShift*, and enter your given credentials:
+Now although your CodeReady workspace is running on the Kubernetes cluster, it’s running with a default restricted _Service Account_ that prevents you from creating most resource types. So that we can have access to OpenShift from our CodeReady Workspace terminal you can login to OpenShift by clicking on *Login to OpenShift* and entering your given credentials:
 
 * Username: `{{ USER_ID }}`
 * Password: `{{ OPENSHIFT_USER_PASSWORD }}`
