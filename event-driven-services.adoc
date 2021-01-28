@@ -6,7 +6,7 @@ Traditional microservice architectures are typically composed of many individual
 
 In an event-driven architecture, we can treat data streams as *events* using reactive programming and distributed messaging. *Reactive programming* is an asynchronous programming paradigm concerned with data streams and the propagation of change. In the previous lab, we developed Inventory, Catalog, Shopping Cart and Order services with obvious interactions.
 
-In this lab, we’ll change our shopping cart and order implementation and add a payment service as an Event-Driven/Reactive application in our cloud-native appliation architecture. These cloud-native applications will use AMQ Streams (based on Apache Kafka) as a messaging/streaming backbome. AMQ Streams makes it easy to run Apache Kafka on OpenShift with key features:
+In this lab, we’ll change our shopping cart and order implementation and add a payment service as an Event-Driven/Reactive application in our cloud-native appliation architecture. These cloud-native applications will use AMQ Streams (based on Apache Kafka) as a messaging/streaming backbone. AMQ Streams makes it easy to run Apache Kafka on OpenShift with key features:
 
 * Designed for horizontal scalability
 * Message ordering guarantee at the partition level
@@ -75,7 +75,7 @@ Next, we will create Kafka _Topic_. Click _Add > From Catalog_ again, type in `k
 
 image::kafka-topic-catalog.png[kafka, 700]
 
-Click on *Create* and you will enter YAML editor that defines a *KafkaTopic* object. Change the name to `orders` as shown then click on the *Create* button on the bottom:
+Click on *Create* and you will enter YAML editor that defines a *KafkaTopic* object. Change the name to `orders` as shown then click on the *Create* button (on the bottom):
 
 image::kafka-topic-orders-create.png[kafka, 700]
 
@@ -83,7 +83,7 @@ Create another topic using the same process as above, but called `payments`:
 
 image::kafka-topic-catalog.png[kafka, 700]
 
-Change the name to `payments` then click on the *Create* button on the bottom.
+Change the name to `payments` then click on the *Create* button (on the bottom).
 
 image::kafka-topic-payments-create.png[kafka, 700]
 
