@@ -3,4 +3,4 @@
 
 In this section, you'll get to play with some of the other features of knative such as Revision Management, Scaling, and Eventing from within CodeReady Workspaces.
 
-Instructions are adapted from Red Hat's Kubernetes tutorial and can be found link:https://hatmarch.github.io/knative-tutorial?USER={{ USER_ID }}[here]
+Instructions are adapted from Red Hat's Kubernetes tutorial and can be found link:https://hatmarch.github.io/knative-tutorial?USER={{ USER_ID }}&CLUSTER_SUBDOMAIN={{ ROUTE_SUBDOMAIN }}[here]
