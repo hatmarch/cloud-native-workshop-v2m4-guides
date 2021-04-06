@@ -1,4 +1,4 @@
-FROM quay.io/osevg/agnosticd-runner
+FROM quay.io/osevg/agnosticd-runner:latest
 
 USER root
 
