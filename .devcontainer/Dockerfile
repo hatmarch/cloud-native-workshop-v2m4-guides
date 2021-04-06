@@ -12,6 +12,8 @@ RUN yum -y remove git* && yum -y install https://packages.endpoint.com/rhel/7/os
 
 RUN npm install --global gulp
 
+RUN chown -R default /opt/app-root/src
+
 USER default
 
 # # Default DEMO_HOME directory

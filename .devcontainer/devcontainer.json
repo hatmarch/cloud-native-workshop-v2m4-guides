@@ -20,8 +20,9 @@
 		// "-v", "${env:HOME}/.ssh:/home/jboss/.ssh",
 
 		// Ensure that the m2 cache persists
-		"-v", "${localWorkspaceFolder}:/opt/approot/src",
-
+		"-v", "${env:HOME}/.m2:/opt/approot/src/.m2",
+		//"-v", "${env:HOME}/.npm:/opt/approot/src/.npm",
+		
 		// Used for AWS based clusters
 		"-e", "AWS_PROFILE=redhat",
 		"-e", "REGION=ap-southeast-2"
